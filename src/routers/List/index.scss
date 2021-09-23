@@ -1,0 +1,118 @@
+.list {
+    overflow: hidden; 
+    height: 100%;
+    background-color: #f7f7f8;
+     background-image: url(../../assets/common/红旗.png);
+     background-size: 100% 100%;
+     background-repeat: no-repeat;
+
+    .content{
+     position: relative;
+     margin-right:1.2rem;
+     width:100%;
+     height:100%;
+     .titleList {
+         position: absolute;
+        //  padding-left: 1.8%;
+         top:2.43rem;
+         width: 17.16rem;
+         height:4.14rem;
+        display: -webkit-flex; /* Safari */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-around;
+        align-items:center;
+        align-content:space-between;
+        .card {
+            width: 3.20rem;
+            height:2.0rem;
+            background-color: white;
+            padding:10px;
+            position: relative;
+            border-radius: 5px;
+            border: 1px solid #f7f7f8;
+            background-image: url(../../assets/list/穹顶.png);
+            background-size: 93% 60%;
+            background-position: right top;
+            background-repeat: no-repeat;
+            .label {
+                position: absolute;
+                display: inline-block;
+                width:2.5rem;
+                font-size: 0.22rem;
+
+            }
+            .chapterNum {
+                position: absolute;
+                width:1.59rem;
+                height:0.66rem;
+                top:0.75rem;
+                color:white;
+                font-size: 0.22rem;
+                background-image: url(../../assets/list/章节.png);
+                background-size: 100% 100%;
+                background-position: center center;
+                background-repeat: no-repeat;
+                padding-left: 0.1rem;
+                padding-top: 0.15rem;
+                .text {
+                    display: inline-block;
+                    color:white;
+                    width: 100%;
+                    height: 100%;
+                    // vertical-align: middle;
+                    font-size: 0.24rem;
+
+                }
+                // vertical-align: middle;
+            }
+            .scanList {
+                display: inline-block;
+                position: absolute;
+                width:1.4rem;
+                height:0.2rem;
+                bottom:0.2rem;
+            }
+            
+        }
+     }
+     .pageChange {
+        position: absolute;
+        display: inline-block;
+         bottom:1rem;
+         right:12%;
+         width: 25%;
+         height:10%; 
+         text-align: right;
+        .current {
+            height:0.5rem;
+            width: 1.25rem;
+            font-size: 0.24rem;
+            margin:0.1rem;
+            padding:0;
+            border:0;
+            outline: none;
+            color:white;
+            background-color:#ba0303;
+            border-radius: 0.25rem;
+            cursor: pointer;
+        }
+        .notCurrent {
+            height:0.5rem;
+            width: 1.25rem;
+            font-size: 0.24rem;
+            margin:0.1rem;
+            padding:0;
+            border:0;
+            outline: none;
+            color:white;
+            cursor: not-allowed;
+            background-color:rgb(205,203,205);
+            border-radius: 0.25rem;
+        }
+            
+        //  background-color: red;
+     }
+    }
+       
+}

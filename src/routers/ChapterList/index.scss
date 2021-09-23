@@ -1,0 +1,145 @@
+.list {
+    overflow: hidden; 
+    height: 100%;
+    background-color: #f7f7f8;
+     background-image: url(../../assets/common/红旗.png);
+     background-size: 100% 100%;
+     background-repeat: no-repeat;
+    .content{
+     position: relative;
+     margin-right:1.2rem;
+     width:100%;
+     height:100%;
+        .cardTitle {
+            position: absolute;
+            margin-left: 0.3rem;
+            padding: 0.2rem;
+            top:2.43rem;
+            width: 16.57rem;
+            height:1.36rem;
+            background-color: white;
+            border-radius: 5px;
+            font-size: 0.24rem;
+            font-weight: 600;
+            border: 1px solid #f7f7f8;
+            background-image: url(../../assets/list/穹顶.png);
+            background-size: 3rem 1.3rem;
+            background-position: right top;
+            background-repeat: no-repeat;
+            .label {
+                position: absolute;
+                display: inline-block;
+                width:70%;
+                font-size: 0.24rem;
+            }
+            .chapterNum {
+                position: absolute;
+                width:1.6rem;
+                height:0.7rem;
+                top:0.4rem;
+                color:white;
+                background-image: url(../../assets/list/章节.png);
+                background-size: 100% 100%;
+                background-position: center center;
+                background-repeat: no-repeat;
+                padding-left: 0.1rem;
+                padding-top: 0.2rem;
+                font-size: 0.22rem;
+                // .text {
+                //     display: inline-block;
+                //     color:white;
+                //     padding-left: 10%;
+                //     font-size: 12px;
+
+                // }
+            }
+        }
+        .cardList {
+            position: absolute;
+            margin-left: 0.3rem;
+            // padding: 0.2rem;
+            top:4rem;
+            width: 16.57rem;
+            height:6rem;
+            background-color: white;
+            border-radius: 5px;
+            overflow: auto;
+            border: 1px solid #f7f7f8;
+            .chapter{
+                width: 100%;
+                height:0.74rem;
+                line-height: 0.74rem;
+                border-bottom: 1px solid darkgrey;
+                .chapterText {
+                    position: relative;
+                    top:50%;
+                    // font: 0.24rem;
+                    transform:translateY(-50%);
+                    .icon{
+                        display: inline-block;
+                        margin-right: 0.2rem;
+                        margin-left: 0.2rem;
+                        margin-top: -0.08rem;
+                        width:0.3rem;
+                        font-size: 0.24rem;
+                    }
+                    .chapterTitle{
+                        white-space: nowrap;
+                        cursor: pointer;
+                        font-size: 0.24rem;
+                    }
+
+                }
+                
+            }
+
+        }
+    }
+}
+
+.listModal {
+    height: 6rem;
+    width: 12rem;
+    .ant-modal-footer{
+        padding: 0!important;
+        height: 1.62rem;
+        background-Color:rgb(237,240,241);
+        .audio {
+            width:100%;
+            height:0.5rem;
+        }
+        .recordButton {
+            display: inline-block;
+            width: 3.16rem;
+            height:0.55rem;
+            border-radius:0.25rem;
+            color:#fff;
+            line-height: 0.55rem;
+            font-size: 0.26rem;
+            background-color: #ba0303;
+            cursor: pointer;
+        }
+    }
+    .modalContent{
+        position: relative;
+        height: 4rem;
+        background-image: url('../../assets/list/bch.png');
+        background-repeat: no-repeat;
+        background-position: center 0.8rem;
+        .titleChepter{
+            position: absolute;
+            top:0.7rem;
+            font-size: 0.28rem;
+            font-weight: 600;
+            color: #ba0303;
+
+        }
+        .contentChepter {
+            position: absolute;
+            top:1.9rem;
+            font-size: 0.24rem;
+            height:2rem;
+            overflow: auto;
+        }
+    }
+ }

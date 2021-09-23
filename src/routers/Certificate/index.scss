@@ -1,0 +1,77 @@
+.index {
+    overflow: hidden; 
+    height: 100%;
+    background-color: #f7f7f8;
+    
+    .content{
+        position: relative;
+        margin-right:1.2rem;
+        height:100%;
+        .certificate {
+            position: absolute;
+            top:1.27rem;
+            height:8.18rem;
+            width:12.10rem;
+            left:3rem;
+        }
+
+        .leftLogo {
+            width: 2.84rem;
+            height:0.57rem;
+            position: absolute;
+            top:0.3rem;
+            left:0.2rem;
+        }
+
+        .leftReturn {
+            width: 1.32rem;
+            height:0.48rem;
+            position: absolute;
+            top:0.3rem;
+            left:3rem;
+        }
+
+        .certificateLeftMain {
+            width: 8.64rem;
+            height:7.60rem;
+            position: absolute;
+            top:0;
+            left:0;
+            opacity: 0.22;
+        }
+
+        .mainText {
+            width: 4.92rem;
+            height:2.41rem;
+            position: absolute;
+            top:1.91rem;
+            left:10.75rem;
+        }
+        .columns {
+            width: 2.45rem;
+            height:3.75rem;
+            position: absolute;
+            bottom:0;
+            left:6.30rem;
+        }
+        .mainTips {
+            position: absolute;
+            font-size: 0.24rem;
+            top:0.57rem;
+            left:9.5rem;
+            width: 3.5rem;
+            line-height: 0.28rem;
+            height:0.28rem;
+            color: rgb(167,0,5);
+        }
+
+        .sendMailButton {
+            position: absolute;
+            top:0rem;
+            left:13.16rem;
+            width: 3.39rem;
+            height:1.38rem;
+            cursor: pointer;
+        }
+    }
+}

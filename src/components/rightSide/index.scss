@@ -1,0 +1,33 @@
+.sidebar { 
+    float: right;
+    width:1.2rem;
+    height: 10.8rem;
+    border-left: 1px solid darkgray;
+    position: relative;
+
+    .rightEmblem{
+        display: block;
+        position:absolute;
+        top: 0.3rem;
+        left:0.5rem;
+        width:0.2rem; 
+    }
+
+    .rightText{
+        display: block;
+        left: 0.5rem;
+        position:absolute;
+        top: 2.74rem;
+        width:0.2rem;  
+        height: 5.32rem;
+          
+    }
+
+    .rightMicrophone{
+        display: block;
+        position:absolute;
+        bottom:0.5rem;
+        left:0.5rem;
+        width:0.2rem;   
+    }
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <!-- <link rel="icon" href="%PUBLIC_URL%/favicon.ico" /> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  
+  <title>欢声习语</title>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+</body>
+<script src="https://res.wx.qq.com/open/js/jweixin-1.6.0.js"></script>
+<script>
+  window.wx = wx;
+     if(window.location.hash.includes('listen')) {
+      document.addEventListener('DOMContentLoaded', function () {
+    function audioAutoPlay() {
+      const audio = document.getElementsByClassName('mobilAudio')[0];
+      audio.play();
+      document.addEventListener("WeixinJSBridgeReady", function () {
+        audio.play();
+      }, false);
+    }
+    audioAutoPlay();
+  });
+  //--创建触摸监听，当浏览器打开页面时，触摸屏幕触发事件，进行音频播放
+  document.addEventListener('touchstart', function () {
+    function audioAutoPlay() {
+      let audio = document.getElementsByClassName('mobilAudio')[0];
+      audio.play();
+    }
+    audioAutoPlay();
+  });
+    //--创建页面监听，等待微信端页面加载完毕 触发音频播放
+  }
+</script>
+<script>
+  (function (win) {
+    var tid;
+    function refreshRem() {
+
+      let designSize = /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent) ? 750 : 1920; // 设计图尺寸
+      let html = document.documentElement;
+      let wW = html.clientWidth;// 窗口宽度
+      let rem = wW * 100 / designSize;
+      document.documentElement.style.fontSize = rem + 'px';
+    }
+
+    win.addEventListener('resize', function () {
+      clearTimeout(tid);
+      tid = setTimeout(refreshRem, 300);
+    }, false);
+    win.addEventListener('pageshow', function (e) {
+      if (e.persisted) {
+        clearTimeout(tid);
+        tid = setTimeout(refreshRem, 300);
+      }
+    }, false);
+    refreshRem();
+
+  })(window);
+</script>
+<!-- <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.6.0.js" ></script> -->
+</html>

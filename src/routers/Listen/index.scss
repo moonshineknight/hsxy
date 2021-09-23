@@ -1,0 +1,55 @@
+
+  .listen {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    .certificate {
+      position: absolute;
+      width: 7.5rem;
+      height:7.31rem;      
+    }
+
+    .studyText{
+      position: absolute;
+      // text-align: center;
+      top: 4rem;
+      padding:0 0.5rem;
+      font-size: 0.30rem;
+    }
+    .studyCompany{
+      position: absolute;
+      // text-align: center;
+      top: 5.7rem;
+      left:3rem;
+      padding:0 0.5rem;
+      font-size: 0.30rem;
+    }
+    .studyDate{
+      position: absolute;
+      // text-align: center;
+      top: 6.2rem;
+      padding:0 0.5rem;
+      font-size: 0.30rem;
+      left:3.3rem;
+    }
+    .audioContainer {
+      position: absolute;
+      height: 1.25rem;
+      width: 100%;
+      bottom:0;
+      background-color:rgb(237,240,241);
+    }
+
+    .mobilAudio {
+      position: absolute;
+      width: 100%;
+      height:0.98rem;
+      bottom:0rem;
+    }
+  }
+
+
+
+
+
